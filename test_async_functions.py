@@ -11,7 +11,6 @@ async def test_async_function_resolves_with_expected_value(event_loop):
     assert result == 42
 
 # 2 тест
-import pytest
 import asyncio
 
 async def some_async_function():
@@ -23,7 +22,6 @@ async def test_async_function_rejects_with_expected_exception(event_loop):
         await some_async_function()
 
 # 3 тест
-import pytest
 import aiohttp
 import asyncio
 
@@ -41,7 +39,6 @@ async def test_http_request_returns_correct_response(event_loop):
     assert 'completed' in result
 
 # 4 тест
-import pytest
 import aiopg
 import asyncio
 
@@ -62,7 +59,6 @@ async def test_add_record_to_database(event_loop):
         await connection.wait_closed()
 
 # 5 тест
-import pytest
 import asyncio
 
 async def async_function_to_run_in_thread():
